@@ -1,0 +1,758 @@
+body
+{
+padding:0px;
+margin:0px;
+}
+
+/* Собственно сам слайдер */
+.slider
+{
+max-width:100%;
+position: relative;
+height:100%;
+margin-bottom: 130px;
+margin: auto;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+object-fit: cover;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+cursor: pointer;
+    position: absolute;
+    top:20px;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next
+{
+top:50px;
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+/* Заголовок слайда */
+.slideText {
+position:absolute;
+top:100px;
+color: #fff;
+    font-size: 30px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+/* Кружочки */
+.slider-dots
+{
+text-align: center;
+top:20px; 
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+
+
+/* Анимация слайдов */
+
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+a {top:50%}
+/* ************************************************* 86.602540378444 квадрат ****************************************** */
+.square
+{
+position: absolute;
+left:4%; /* отступ слева */
+top:4%; /* отступ снизу */
+border-top:300px solid GreenYellow;
+border-right:300px solid DarkGreen;
+border-bottom:300px solid GreenYellow;
+border-left:300px solid DarkGreen;
+}
+/* ************************************************* шестиугольник ************************************************* */
+.trigon1
+{
+position:absolute;
+left:850px; /* отступ слева */
+top:87px; /* отступ снизу */
+border:150px solid transparent;
+border-top:243px solid OrangeRed;
+}
+.trigon2
+{
+position: absolute;
+left:1000px; /* отступ слева */
+top:-63px; /* отступ снизу */
+border:150px solid transparent;
+border-bottom:243px solid Orange;
+}
+.trigon3
+{
+position: absolute;
+left:1000px; /* отступ слева */
+top:330px; /* отступ снизу */
+border:150px solid transparent;
+border-top:243px solid OrangeRed;
+}
+.trigon4
+{
+position:absolute;
+left:850px; /* отступ слева */
+top:180px; /* отступ снизу */
+border:150px solid transparent;
+border-bottom:243px solid Orange;
+}
+.trigon5
+{
+position: absolute;
+left:700px; /* отступ слева */
+top:330px; /* отступ снизу */
+border:150px solid transparent;
+border-top:243px solid OrangeRed;
+}
+.trigon6
+{
+position: absolute;
+left:700px; /* отступ слева */
+top:-63px; /* отступ снизу */
+border:150px solid transparent;
+border-bottom:243px solid Orange;
+}
+/* ************************************************* квадрат 112 ************************************************* */
+#Q50
+{
+position:absolute;
+top:0px;
+left:0px;
+height:200px;
+width:200px;
+background-color:Gold;
+}
+#Q42
+{
+position:absolute;
+top:280px;
+left:280px;
+height:168px;
+width:168px;
+background-color:Blue;
+}
+#Q37
+{
+position:absolute;
+top:300px;
+left:132px;
+height:148px;
+width:148px;
+background-color:SteelBlue;
+}
+#Q35
+{
+position:absolute;
+top:0px;
+left:200px;
+height:140px;
+width:140px;
+background-color:DarkOrange;
+}
+#Q33
+{
+position:absolute;
+top:316px;
+left:0px;
+height:132px;
+width:132px;
+background-color:MediumOrchid;
+}
+#Q29
+{
+position:absolute;
+top:200px;
+left:0px;
+height:116px;
+width:116px;
+background-color:Tomato;
+}
+#Q27
+{
+position:absolute;
+top:0px;
+left:340px;
+height:108px;
+width:108px;
+background-color:OrangeRed;
+}
+#Q25
+{
+position:absolute;
+top:200px;
+left:116px;
+height:100px;
+width:100px;
+background-color:PaleGreen;
+}
+#Q24
+{
+position:absolute;
+top:184px;
+left:352px;
+height:96px;
+width:96px;
+background-color:Red;
+}
+#Q19
+{
+position:absolute;
+top:108px;
+left:372px;
+height:76px;
+width:76px;
+background-color:LawnGreen;
+}
+#Q18
+{
+position:absolute;
+top:208px;
+left:280px;
+height:72px;
+width:72px;
+background-color:Aquamarine;
+}
+#Q17
+{
+position:absolute;
+top:140px;
+left:260px;
+height:68px;
+width:68px;
+background-color:GreenYellow;
+}
+#Q16
+{
+position:absolute;
+top:236px;
+left:216px;
+height:64px;
+width:64px;
+background-color:Yellow;
+}
+#Q15
+{
+position:absolute;
+top:140px;
+left:200px;
+height:60px;
+width:60px;
+background-color:YellowGreen;
+}
+#Q11
+{
+position:absolute;
+top:140px;
+left:328px;
+height:44px;
+width:44px;
+background-color:MediumSeaGreen;
+}
+#Q9
+{
+position:absolute;
+top:200px;
+left:216px;
+height:36px;
+width:36px;
+background-color:GreenYellow;
+}
+#Q8
+{
+position:absolute;
+top:108px;
+left:340px;
+height:32px;
+width:32px;
+background-color:DarkRed;
+}
+#Q7
+{
+position:absolute;
+top:208px;
+left:252px;
+height:28px;
+width:28px;
+background-color:Pink;
+}
+#Q6
+{
+position:absolute;
+top:184px;
+left:328px;
+height:24px;
+width:24px;
+background-color:MediumVioletRed;
+}
+#Q4
+{
+position:absolute;
+top:300px;
+left:116px;
+height:16px;
+width:16px;
+background-color:LightSeaGreen;
+}
+#Q2
+{
+position:absolute;
+top:200px;
+left:252px;
+height:8px;
+width:8px;
+background-color:Cornsilk;
+}
+/* ************************************************* квадрат 112 с кругами ************************************************* */
+#Qo50
+{
+position:absolute;
+top:0px;
+left:0px;
+height:200px;
+width:200px;
+background:radial-gradient(White,Gold);
+}
+#Qo42
+{
+position:absolute;
+top:280px;
+left:280px;
+height:168px;
+width:168px;
+background:radial-gradient(White,Blue);
+}
+#Qo37
+{
+position:absolute;
+top:300px;
+left:132px;
+height:148px;
+width:148px;
+background:radial-gradient(White,SteelBlue);
+}
+#Qo35
+{
+position:absolute;
+top:0px;
+left:200px;
+height:140px;
+width:140px;
+background:radial-gradient(White,DarkOrange);
+}
+#Qo33
+{
+position:absolute;
+top:316px;
+left:0px;
+height:132px;
+width:132px;
+background:radial-gradient(White, MediumOrchid);
+}
+#Qo29
+{
+position:absolute;
+top:200px;
+left:0px;
+height:116px;
+width:116px;
+background:radial-gradient(White,Tomato);
+}
+#Qo27
+{
+position:absolute;
+top:0px;
+left:340px;
+height:108px;
+width:108px;
+background:radial-gradient(White,OrangeRed);
+}
+#Qo25
+{
+position:absolute;
+top:200px;
+left:116px;
+height:100px;
+width:100px;
+background:radial-gradient(White,PaleGreen);
+}
+#Qo24
+{
+position:absolute;
+top:184px;
+left:352px;
+height:96px;
+width:96px;
+background:radial-gradient(White,Red);
+}
+#Qo19
+{
+position:absolute;
+top:108px;
+left:372px;
+height:76px;
+width:76px;
+background:radial-gradient(White,LawnGreen);
+}
+#Qo18
+{
+position:absolute;
+top:208px;
+left:280px;
+height:72px;
+width:72px;
+background:radial-gradient(White,Aquamarine);
+}
+#Qo17
+{
+position:absolute;
+top:140px;
+left:260px;
+height:68px;
+width:68px;
+background:radial-gradient(White,GreenYellow);
+}
+#Qo16
+{
+position:absolute;
+top:236px;
+left:216px;
+height:64px;
+width:64px;
+background:radial-gradient(White,Yellow);
+}
+#Qo15
+{
+position:absolute;
+top:140px;
+left:200px;
+height:60px;
+width:60px;
+background:radial-gradient(White,YellowGreen);
+}
+#Qo11
+{
+position:absolute;
+top:140px;
+left:328px;
+height:44px;
+width:44px;
+background:radial-gradient(White,YellowGreen);
+}
+#Qo9
+{
+position:absolute;
+top:200px;
+left:216px;
+height:36px;
+width:36px;
+background:radial-gradient(White,GreenYellow);
+}
+#Qo8
+{
+position:absolute;
+top:108px;
+left:340px;
+height:32px;
+width:32px;
+background:radial-gradient(White,DarkRed);
+}
+#Qo7
+{
+position:absolute;
+top:208px;
+left:252px;
+height:28px;
+width:28px;
+background:radial-gradient(White,Pink);
+}
+#Qo6
+{
+position:absolute;
+top:184px;
+left:328px;
+height:24px;
+width:24px;
+background:radial-gradient(White,MediumVioletRed);
+}
+#Qo4
+{
+position:absolute;
+top:300px;
+left:116px;
+height:16px;
+width:16px;
+background:radial-gradient(White,LightSeaGreen);
+}
+#Qo2
+{
+position:absolute;
+top:200px;
+left:252px;
+height:8px;
+width:8px;
+background:radial-gradient(White,Cornsilk);
+}
+/* ************************************************* динамический квадрат 112 ************************************************* */
+@keyframes Q50
+{100%{background:#FDE200;}}
+.Q50
+{
+animation:Q50 1s forwards 1s;
+position:absolute;
+top:0px;
+left:0px;
+height:200px;
+width:200px;
+}
+@keyframes Q42 {100%{background:#0000FF;}}
+.Q42
+{
+animation:Q42 1s forwards 2s;
+position:absolute;
+top:280px;
+left:280px;
+height:168px;
+width:168px;
+}
+@keyframes Q37 {100%{background:#B5ADCF;}}
+.Q37
+{
+animation:Q37 1s forwards 3s;
+position:absolute;
+top:300px;
+left:132px;
+height:148px;
+width:148px;
+}
+@keyframes Q35 {100%{background:#FDAD00;}}
+.Q35
+{
+animation:Q37 1s forwards 4s;
+position:absolute;
+top:0px;
+left:200px;
+height:140px;
+width:140px;
+}
+@keyframes Q35 {100%{background:#FDADCF;}}
+.Q33
+{
+animation:Q35 1s forwards 5s;
+position:absolute;
+top:316px;
+left:0px;
+height:132px;
+width:132px;
+}
+@keyframes Q29 {100%{background:#FF7F52;}}
+.Q29
+{
+animation:Q29 1s forwards 6s;
+position:absolute;
+top:200px;
+left:0px;
+height:116px;
+width:116px;
+}
+@keyframes Q27 {100%{background:#FD6E00;}}
+.Q27
+{
+animation:Q27 1s forwards 7s;
+position:absolute;
+top:0px;
+left:340px;
+height:108px;
+width:108px;
+}
+@keyframes Q25 {100%{background:#9EFF7D;}}
+.Q25
+{
+animation:Q25 1s forwards 8s;
+position:absolute;
+top:200px;
+left:116px;
+height:100px;
+width:100px;
+}
+@keyframes Q24 {100%{background:#FF0000;}}
+.Q24
+{
+animation:Q24 1s forwards 9s;
+position:absolute;
+top:184px;
+left:352px;
+height:96px;
+width:96px;
+}
+@keyframes Q19 {100%{background:#D4FF00;}}
+.Q19
+{
+animation:Q19 1s forwards 10s;
+position:absolute;
+top:108px;
+left:372px;
+height:76px;
+width:76px;
+}
+@keyframes Q18 {100%{background:#85FFC2;}}
+.Q18
+{
+animation:Q18 1s forwards 11s;
+position:absolute;
+top:208px;
+left:280px;
+height:72px;
+width:72px;
+}
+@keyframes Q17 {100%{background:#85FF00;}}
+.Q17
+{
+animation:Q17 1s forwards 12s;
+position:absolute;
+top:140px;
+left:260px;
+height:68px;
+width:68px;
+}
+@keyframes Q16 {100%{background:#FFFF24;}}
+.Q16
+{
+animation:Q16 1s forwards 13s;
+position:absolute;
+top:236px;
+left:216px;
+height:64px;
+width:64px;
+}
+@keyframes Q15 {100%{background:#C4CC00;}}
+.Q15
+{
+animation:Q15 1s forwards 14s;
+position:absolute;
+top:140px;
+left:200px;
+height:60px;
+width:60px;
+}
+@keyframes Q11 {100%{background:#D400FF;}}
+.Q11
+{
+animation:Q11 1s forwards 15s;
+position:absolute;
+top:140px;
+left:328px;
+height:44px;
+width:44px;
+}
+@keyframes Q9 {100%{background:#EBFF00;}}
+.Q9
+{
+animation:Q9 1s forwards 16s;
+position:absolute;
+top:200px;
+left:216px;
+height:36px;
+width:36px;
+}
+@keyframes Q8 {100%{background:#DE0000;}}
+.Q8
+{
+animation:Q8 1s forwards 17s;
+position:absolute;
+top:108px;
+left:340px;
+height:32px;
+width:32px;
+}
+@keyframes Q7 {100%{background:#FF46FF;}}
+.Q7
+{
+animation:Q7 1s forwards 18s;
+position:absolute;
+top:208px;
+left:252px;
+height:28px;
+width:28px;
+}
+@keyframes Q6 {100%{background:#9E3D45;}}
+.Q6
+{
+animation:Q6 1s forwards 19s;
+position:absolute;
+top:184px;
+left:328px;
+height:24px;
+width:24px;
+}
+@keyframes Q4 {100%{background:#0073FF;}}
+.Q4
+{
+animation:Q4 1s forwards 20s;
+position:absolute;
+top:300px;
+left:116px;
+height:16px;
+width:16px;
+}
+@keyframes Q2 {100%{background:#FFFFD0;}}
+.Q2
+{
+animation:Q2 1s forwards 21s;
+position:absolute;
+top:200px;
+left:252px;
+height:8px;
+width:8px;
+}
+
